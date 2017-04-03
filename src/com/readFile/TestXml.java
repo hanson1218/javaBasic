@@ -1,4 +1,4 @@
-package com.test;
+package com.readFile;
 
 import java.io.File;
 
