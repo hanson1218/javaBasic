@@ -2,6 +2,7 @@ package com.collection;
 
 import java.util.HashMap;
 import java.util.Map;
+import static java.lang.System.out;
 
 public class TestMap 
 {
@@ -22,7 +23,7 @@ public class TestMap
 		Map<String, String> map = new HashMap<>();
 		map.put(key, str1);
 		str1= str2;
-		System.out.println(map.get(key));
+		out.println(map.get(key));
 		
 		
 	}
