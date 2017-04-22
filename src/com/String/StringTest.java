@@ -1,5 +1,7 @@
+
 package com.String;
 
+import java.util.Date;
 public class StringTest 
 {
 	public static void main(String[] args) {
@@ -15,4 +17,16 @@ public class StringTest
 		System.out.println(test1==test2);
 		System.out.println(test1==test3);
 	}
+	public void testStringFormat()
+	{
+		String str = null;
+		Date date = new Date();
+		//$ 
+		str=String.format("%1$td%3$s%1$tm%2$s%1$tY", date,"abc","def");  
+		System.out.println(str);
+	}
 }
+
+
+	
+
