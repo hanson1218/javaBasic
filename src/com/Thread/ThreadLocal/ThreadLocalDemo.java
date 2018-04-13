@@ -1,17 +1,23 @@
 package com.Thread.ThreadLocal;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class ThreadLocalDemo {
 
-	public  static ThreadLocal<Integer> local = new ThreadLocal<Integer>(){
-		public Integer initialValue(){
-			return 0;
-		}
-	};
+	
 	
 	
 	public static void main(String[] args) {
-		Thread[] threads = new Thread[5];
+		
+		ExecutorService executorService = Executors.newCachedThreadPool();
+		Processor processor = new Processor();
+		executorService.execute(processor);
+		executorService.execute(processor);
+		executorService.execute(processor);
+		executorService.execute(processor);
+		
+		/*Thread[] threads = new Thread[5];
 		for (int i = 0; i < threads.length; i++) {
 			threads[i] = new Thread(new Runnable() {
 				
@@ -25,6 +31,6 @@ public class ThreadLocalDemo {
 		}
 		for (int i = 0; i < threads.length; i++) {
 			threads[i].start();
-		}
+		}*/
 	}
 }
