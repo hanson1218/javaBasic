@@ -11,6 +11,13 @@ public class TestBird {
             }
             
         });
+        
+        Object object = new Object() {
+			public int hashCode() {
+				return 1;
+			}
+		};
+		System.out.println(object.hashCode());
 	}
 	
 	public void test(Bird bird){

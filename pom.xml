@@ -19,6 +19,14 @@
    		<artifactId>guava</artifactId>
    		<version>19.0</version>
 	</dependency>
+	<!-- https://mvnrepository.com/artifact/cglib/cglib-nodep -->
+	<dependency>
+    	<groupId>cglib</groupId>
+    	<artifactId>cglib-nodep</artifactId>
+    	<version>3.2.5</version>
+	</dependency>
+	
+	
 
   </dependencies>
   
