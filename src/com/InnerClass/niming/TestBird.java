@@ -1,5 +1,11 @@
 package com.InnerClass.niming;
 
+/**
+ * 匿名内部类不能访问外部类方法中的局部变量，除非该变量被声明为final类型
+ * Java 8更加智能：如果局部变量被匿名内部类访问，那么该局部变量相当于自动使用了final修饰。
+ * @author pact
+ *
+ */
 public class TestBird {
 
 	public static void main(String[] args) {
