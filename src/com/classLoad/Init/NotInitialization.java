@@ -4,9 +4,9 @@ public class NotInitialization {
 
 	//
 	public static void main(String[] args) {
-		System.out.println(SubClass.value);//通过子类引用父类的静态字段，只会触发父类的初始化，不会导致子类初始化
+//		System.out.println(SubClass.value);//通过子类引用父类的静态字段，只会触发父类的初始化，不会导致子类初始化
 //		SuperClass[] sca = new SuperClass[10];
-//		System.out.println(SuperClass.HELLOworld);//结果：只加载了这个常量
+		System.out.println(SuperClass.HELLOworld);//结果：只加载了这个常量
 													//虽然NotInitialization引用了superClass的常量，但是在编译阶段已经将
 													//SuperClass.HELLOworld存储在NotInitialization的常量池了
 	}

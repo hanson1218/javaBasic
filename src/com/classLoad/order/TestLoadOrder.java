@@ -12,10 +12,10 @@ public class TestLoadOrder extends  SuperClass
 	public static int B = A;
 	
 	 //静态变量
-    static String STATIC_FIELD = "子类的静态属性";
+//    static String STATIC_FIELD = "子类的静态属性";
     //静态代码块
     static {
-    	System.out.println(STATIC_FIELD);
+//    	System.out.println(STATIC_FIELD);
     	System.out.println("子类的静态代码块");
     }
     

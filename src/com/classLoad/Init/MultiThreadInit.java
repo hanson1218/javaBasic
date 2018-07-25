@@ -1,16 +1,22 @@
 package com.classLoad.Init;
 
+/**
+ * 多个线程去初始化同一个类，只有一个线程会执行这个类的init
+ * @author lhs
+ *
+ */
 public class MultiThreadInit 
 {
 
 	static class DeadLoopClass
 	{
 		static {
-			if(true)
+			/*if(true)
 			{
 				System.out.println(Thread.currentThread()+"init DeadLoopClass");
 				while(true){}
-			}
+			}*/
+			System.out.println(Thread.currentThread()+"init DeadLoopClass");
 		}
 	}
 	
